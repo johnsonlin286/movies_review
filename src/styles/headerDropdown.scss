@@ -1,0 +1,27 @@
+.header-dropdown {
+  &__options {
+    transition: opacity .2s ease-in-out;
+    animation: fadeInDropdown .2s ease-in-out forwards;
+    &.close {
+      animation: fadeOutDropdown .2s ease-in-out forwards;
+    }
+  }
+}
+
+@keyframes fadeInDropdown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutDropdown {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

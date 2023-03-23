@@ -1,0 +1,27 @@
+.header-search {
+  &__options {
+    transition: opacity .3s ease-in;
+    animation: fadeInOptions .3s ease-in-out forwards;
+    &.close {
+      animation: fadeOutOptions .3s ease-in-out forwards;
+    }
+  }
+}
+
+@keyframes fadeInOptions {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutOptions {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

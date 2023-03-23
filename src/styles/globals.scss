@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import 'variables';
+@import 'fonts';
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: $bgcolor;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@import 'headerSearch';
+@import 'headerDropdown';
