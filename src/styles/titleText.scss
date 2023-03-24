@@ -1,0 +1,13 @@
+.title-text {
+  position: relative;
+  padding-top: 18px;
+  &::before {
+    position: absolute;
+    width: 112px;
+    height: 6px;
+    background-color: $orange;
+    content: '';
+    top: 0;
+    left: 0;
+  }
+}
