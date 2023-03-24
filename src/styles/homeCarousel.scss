@@ -1,0 +1,35 @@
+.home-carousel {
+  & > .slick-slider {
+    .slick-slide {
+      opacity: 0.5;
+      &.slick-active {
+        opacity: 1;
+      }
+    }
+    .slick-dots {
+      position: static;
+      margin-top: 50px;
+      bottom: auto;
+      li {
+        width: auto;
+        height: auto;
+        margin-right: 16px;
+        margin-left: 16px;
+        button {
+          width: 12px;
+          height: 12px;
+          background: rgba(255, 255, 255, 0.5);
+          border-radius: 6px;
+          padding: 0;
+          &::before {
+            display: none;
+          }
+        }
+        &.slick-active > button {
+          width: 60px;
+          background: $orange;
+        }
+      }
+    }
+  }
+}

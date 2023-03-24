@@ -1,14 +1,50 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import parse from 'html-react-parser';
+
+import searchKeyword from '../utils/searchKeyword';
 
 import Iconmovie from "../../public/images/iconmovie.svg";
 import Iconsearch from "../../public/images/iconsearch.svg";
+
+const DUMMY_DATA = [
+  {
+    id: 'm1',
+    title: 'Wonder Woman 1984',
+  },
+  {
+    id: 'm2',
+    title: 'Wonder Woman',
+  },
+  {
+    id: 'm3',
+    title: 'Wonder',
+  },
+  {
+    id: 'm4',
+    title: 'Wonder Woman: Bloodlines',
+  },
+  {
+    id: 'm5',
+    title: 'Wonder Park',
+  },
+  {
+    id: 'm6',
+    title: 'Wonder Boys',
+  }
+]
+
+type SearchResult = {
+  id: string,
+  title: string
+}
 
 const HeaderSearch = () => {
   const searchContainer = useRef<HTMLDivElement>(null);
   const searchOptions = useRef<HTMLDivElement>(null);
   const [keyword, setKeyword] = useState("");
   const [showOptions, setShowOptions] = useState(false);
+  const [searchResult, setSearchResult] = useState<Array<SearchResult>>([]);
 
   useEffect(() => {
     document.addEventListener("click", clickOutsideHandler);
@@ -18,8 +54,11 @@ const HeaderSearch = () => {
   }, []);
 
   useEffect(() => {
-    if (keyword && keyword.length > 3) {
-      setShowOptions(true);
+    if (keyword.length) {
+      const result = searchKeyword(DUMMY_DATA, keyword);
+      // console.log(result);
+      setSearchResult(result);
+      if (result.length > 0) setShowOptions(true);
     } else hideOptions();
   }, [keyword]);
 
@@ -43,6 +82,12 @@ const HeaderSearch = () => {
     setKeyword(event.target.value);
   };
 
+  const onInputFocusHandler = () => {
+    if (keyword && keyword.length > 3) {
+      setShowOptions(true);
+    }
+  }
+
   return (
     <div
       ref={searchContainer}
@@ -54,6 +99,7 @@ const HeaderSearch = () => {
           type="text"
           placeholder="Find movie"
           value={keyword}
+          onFocus={onInputFocusHandler}
           onChange={onInputChangeHandler}
           className="flex-grow bg-transparent text-white active:outline-none focus:outline-none px-3 placeholder:text-white"
         />
@@ -67,12 +113,11 @@ const HeaderSearch = () => {
           className="header-search__options bg-black/90 absolute w-full rounded-b-lg left-0 top-full p-[18px] mt-[1px]"
         >
           <ul className="text-sm text-white">
-            <li className="pb-[15px] last:pb-0">Lorem Ipsum</li>
-            <li className="pb-[15px] last:pb-0">Lorem Ipsum</li>
-            <li className="pb-[15px] last:pb-0">Lorem Ipsum</li>
-            <li className="pb-[15px] last:pb-0">Lorem Ipsum</li>
-            <li className="pb-[15px] last:pb-0">Lorem Ipsum</li>
-            <li className="pb-[15px] last:pb-0">Lorem Ipsum</li>
+            {
+              searchResult.length > 0 && searchResult.map(result => (
+                <li key={result?.id} className="capitalize pb-[15px] last:pb-0">{result ? parse(result.title) : ''}</li>
+              ))
+            }
           </ul>
         </div>
       )}
