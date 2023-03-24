@@ -7,7 +7,7 @@ import Logo from "../../public/images/logo.svg";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 w-full bg-white/5 z-[100]">
+    <header className="relative w-full bg-white/5 z-[100]">
       <div className="container py-4 flex justify-between items-center">
         <Image src={Logo} alt="Moovie Time" height={31} className="mr-9"/>
         <HeaderSearch/>
