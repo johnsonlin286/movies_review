@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import Iconstar from '../../public/images/iconstar.svg';
-import Ellipse from '../../public/images/ellipse.svg';
+import Iconstar from '../../../public/images/iconstar.svg';
+import Ellipse from '../../../public/images/ellipse.svg';
 
 type Props = {
   img: string,

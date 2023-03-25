@@ -1,5 +1,5 @@
-import HomeCarousel from '@/components/HomeCarousel'
-import HomeMovies from '@/components/HomeMovies'
+import HomeCarousel from '@/components/home/HomeCarousel'
+import HomeMovies from '@/components/home/HomeMovies'
 
 export default function Home() {
   return (

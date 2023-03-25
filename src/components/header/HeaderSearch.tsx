@@ -2,10 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import parse from 'html-react-parser';
 
-import searchKeyword from '../utils/searchKeyword';
+import searchKeyword from '../../utils/searchKeyword';
 
-import Iconmovie from "../../public/images/iconmovie.svg";
-import Iconsearch from "../../public/images/iconsearch.svg";
+import Iconmovie from "../../../public/images/iconmovie.svg";
+import Iconsearch from "../../../public/images/iconsearch.svg";
 
 const DUMMY_DATA = [
   {

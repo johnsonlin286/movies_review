@@ -17,7 +17,7 @@ type Props = {
 
 const MoviesCard: React.FC<Props> = ({ poster, title, year, category, rating, link }) => {
   return (
-    <div className="movie-card">
+    <div className="movie-card w-[220px]">
       <div className="movie-card__thumbnail relative">
         <Image src={poster} alt={title} width="0" height="0" sizes="100vw" className="w-full h-auto max-w-[220px] mb-3"/>
         <strong className="movie-card__score absolute top-0 right-0 bg-black/80 text-white text-lg text-center font-bold py-[5px] px-[12px]">
@@ -33,7 +33,7 @@ const MoviesCard: React.FC<Props> = ({ poster, title, year, category, rating, li
         </div>
       </div>
       <div className="movie-card__info">
-        <h3 className="font-semibold text-primary mb-[3px]">{title}</h3>
+        <h3 className="font-semibold text-primary w-full overflow-hidden text-ellipsis whitespace-nowrap mb-[3px]">{title}</h3>
         <p className="text-secondary text-sm">{year}</p>
       </div>
     </div>

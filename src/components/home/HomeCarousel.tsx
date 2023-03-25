@@ -2,8 +2,8 @@ import Slider from "react-slick";
 
 import CarouselItem from "./CarouselItem";
 
-import "../../node_modules/slick-carousel/slick/slick.css"; 
-import "../../node_modules/slick-carousel/slick/slick-theme.css";
+import "../../../node_modules/slick-carousel/slick/slick.css"; 
+import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 
 const DUMMY_DATA = [
   {

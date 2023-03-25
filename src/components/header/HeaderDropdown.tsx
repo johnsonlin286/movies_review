@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import Image from "next/image"
 
-import Icongrid from '../../public/images/icongrid.svg';
+import Icongrid from '../../../public/images/icongrid.svg';
 
 const options = [
   'Adventure',

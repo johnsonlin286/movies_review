@@ -3,7 +3,7 @@ import Image from "next/image";
 import HeaderDropdown from "./HeaderDropdown";
 import HeaderSearch from "./HeaderSearch";
 
-import Logo from "../../public/images/logo.svg";
+import Logo from "../../../public/images/logo.svg";
 
 const Header = () => {
   return (
