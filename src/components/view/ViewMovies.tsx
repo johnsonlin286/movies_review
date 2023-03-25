@@ -20,7 +20,7 @@ const ViewMovies: React.FC<Props> = ({ data }) => {
     <div className="view-movies my-[50px]">
       <div className="container">
         <h3 className="text-sm text-primary font-semibold mb-[25px]">RECOMMENDATION MOVIES</h3>
-        <div className="view-movies__list flex flex-wrap justify-between">
+        <div className="view-movies__list flex flex-wrap gap-y-9 justify-between">
           {
             data && data.map(movie => (
               <MoviesCard

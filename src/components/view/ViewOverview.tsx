@@ -34,9 +34,9 @@ const ViewOverview: React.FC<Props> = ({ data }) => {
           </div>
           <div className="flex items-center h-[80px] py-5">
             <ul className="flex items-center">
-              <li className="pr-8 border-r border-white/20">
+              <li className="md:pr-4 xl:pr-8 border-r border-white/20">
                 <div className="flex items-center">
-                  <div className="flex items-center text-4xl mr-3">
+                  <div className="flex items-center md:text-2xl xl:text-4xl mr-3">
                     <Image src={Iconstar} alt="iconstar" width={32} height={32} className="mr-4"/>
                     <strong>{data.rating.toFixed(1)}</strong>
                   </div>
@@ -46,25 +46,25 @@ const ViewOverview: React.FC<Props> = ({ data }) => {
                   </div>
                 </div>
               </li>
-              <li className="px-8 border-r border-white/20">
+              <li className="md:px-4 xl:px-8 border-r border-white/20">
                 <div className="flex flex-col justify-center text-left text-xs uppercase">
                   <p className="text-secondary">Status</p>
                   <p className="font-medium">{data.status}</p>
                 </div>
               </li>
-              <li className="px-8 border-r border-white/20">
+              <li className="md:px-4 xl:px-8 border-r border-white/20">
                 <div className="flex flex-col justify-center text-left text-xs uppercase">
                   <p className="text-secondary">language</p>
                   <p className="font-medium">{data.language}</p>
                 </div>
               </li>
-              <li className="px-8 border-r border-white/20">
+              <li className="md:px-4 xl:px-8 border-r border-white/20">
                 <div className="flex flex-col justify-center text-left text-xs uppercase">
                   <p className="text-secondary">budget</p>
                   <p className="font-medium">{Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(data.budget)}</p>
                 </div>
               </li>
-              <li className="pl-8">
+              <li className="md:pl-4 xl:pl-8">
                 <div className="flex flex-col justify-center text-left text-xs uppercase">
                   <p className="text-secondary">production</p>
                   <p className="font-medium">{data.production}</p>
