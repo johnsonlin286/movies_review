@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import HeaderDropdown from "./HeaderDropdown";
 import HeaderSearch from "./HeaderSearch";
@@ -9,7 +10,9 @@ const Header = () => {
   return (
     <header className="relative w-full bg-white/5 z-[100]">
       <div className="container py-4 flex justify-between items-center">
-        <Image src={Logo} alt="Moovie Time" height={31} className="mr-9"/>
+        <Link href={'/'}>
+          <Image src={Logo} alt="Moovie Time" height={31} className="mr-9"/>
+        </Link>
         <HeaderSearch/>
         <nav>
           <ul className="flex text-primary uppercase font-semibold">
@@ -17,9 +20,9 @@ const Header = () => {
               <HeaderDropdown/>
             </li>
             <li>
-              <button className="px-5">
+              <Link href={'/movies'} className="px-5">
                 Movies
-              </button>
+              </Link>
             </li>
             <li>
               <button className="px-5">

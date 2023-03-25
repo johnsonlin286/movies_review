@@ -1,0 +1,27 @@
+.select-menu {
+  &__options {
+    transition: opacity .3s ease-in-out;
+    animation: selectOptFadeIn .3s ease-in-out forwards;
+    &.close {
+      animation: selectOptFadeOut .3s ease-in-out forwards;
+    }
+  }
+}
+
+@keyframes selectOptFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes selectOptFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

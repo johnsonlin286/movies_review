@@ -61,7 +61,7 @@ const ViewOverview: React.FC<Props> = ({ data }) => {
               <li className="px-8 border-r border-white/20">
                 <div className="flex flex-col justify-center text-left text-xs uppercase">
                   <p className="text-secondary">budget</p>
-                  <p className="font-medium">${Intl.NumberFormat().format(data.budget)}.00</p>
+                  <p className="font-medium">{Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(data.budget)}</p>
                 </div>
               </li>
               <li className="pl-8">

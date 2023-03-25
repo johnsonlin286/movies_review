@@ -22,6 +22,8 @@
     "typescript": "5.0.2"
   },
   "devDependencies": {
+    "@iconify/icons-material-symbols": "^1.2.33",
+    "@iconify/react": "^4.1.0",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.21",
     "sass": "^1.59.3",

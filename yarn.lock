@@ -2,6 +2,25 @@
 # yarn lockfile v1
 
 
+"@iconify/icons-material-symbols@^1.2.33":
+  version "1.2.33"
+  resolved "https://registry.npmjs.org/@iconify/icons-material-symbols/-/icons-material-symbols-1.2.33.tgz"
+  integrity sha512-9pv+PnBIMFM0ZJN3IiEutcRFmy9oH+SeF0rnQmhyW9exmHfdtnkX2km5W2yojmRM58JiarNcUwN1BdaHAdt05Q==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify/react@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.npmjs.org/@iconify/react/-/react-4.1.0.tgz"
+  integrity sha512-Mf72i3TNNKpKCKxmo7kzqyrUdCgaoljpqtWmtqpqwyxoV4ukhnDsSRNLhf2yBnqGr3cVZsdj/i0FMpXIY0Qk0g==
+  dependencies:
+    "@iconify/types" "^2.0.0"
+
+"@iconify/types@*", "@iconify/types@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/@iconify/types/-/types-2.0.0.tgz"
+  integrity sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==
+
 "@next/env@13.2.4":
   version "13.2.4"
   resolved "https://registry.npmjs.org/@next/env/-/env-13.2.4.tgz"
@@ -616,7 +635,7 @@ react-slick@^0.29.0:
     lodash.debounce "^4.0.8"
     resize-observer-polyfill "^1.5.0"
 
-"react@^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0", react@^18.2.0, "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@0.14 || 15 || 16 || 17 || 18", react@18.2.0:
+"react@^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0", react@^18.2.0, "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", react@>=16, "react@0.14 || 15 || 16 || 17 || 18", react@18.2.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
