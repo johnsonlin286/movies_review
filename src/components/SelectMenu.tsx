@@ -27,6 +27,12 @@ const SelectMenu: React.FC<Props> = ({ options }) => {
     };
   };
 
+  const showOptionsHandler = () => {
+    if (!show) {
+      setShow(true);
+    } else hideSelectOpionHandler();
+  }
+
   const updateSelected = (value: string) => {
     setSelected(value);
     hideSelectOpionHandler();
@@ -41,7 +47,7 @@ const SelectMenu: React.FC<Props> = ({ options }) => {
 
   return (
     <div ref={selectElm} className="select-menu relative">
-      <button className="select-menu__input w-full bg-[#E0E0E021]/[0.13] flex justify-between items-center rounded py-[10px] px-4" onClick={() => setShow(true)}>
+      <button className="select-menu__input w-full bg-[#E0E0E021]/[0.13] flex justify-between items-center rounded py-[10px] px-4" onClick={showOptionsHandler}>
         <span className="flex-grow whitespace-nowrap overflow-hidden text-ellipsis text-sm text-left">{selected || 'select one'}</span>
         <Image src={Iconcaretdown} alt="iconcaretdown" width={10} height={10} className={show ? 'rotate-180' : ''}/>
       </button>
