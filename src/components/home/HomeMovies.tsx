@@ -10,7 +10,7 @@ const DUMMY_DATA = [
     year: '2020',
     category: 'Action',
     rating: 7.0,
-    link: '/'
+    link: '/view'
   },
   {
     id: 'm2',
@@ -19,7 +19,7 @@ const DUMMY_DATA = [
     year: '2021',
     category: 'Action',
     rating: 6.4,
-    link: '/'
+    link: '/view'
   },
   {
     id: 'm3',
@@ -28,7 +28,7 @@ const DUMMY_DATA = [
     year: '2021',
     category: 'Action',
     rating: 6.3,
-    link: '/'
+    link: '/view'
   },
   {
     id: 'm4',
@@ -37,7 +37,7 @@ const DUMMY_DATA = [
     year: '2021',
     category: 'Action',
     rating: 6.5,
-    link: '/'
+    link: '/view'
   },
   {
     id: 'm5',
@@ -46,7 +46,7 @@ const DUMMY_DATA = [
     year: '2020',
     category: 'Action',
     rating: 5.1,
-    link: '/'
+    link: '/view'
   },
   {
     id: 'm6',
@@ -55,7 +55,7 @@ const DUMMY_DATA = [
     year: '2021',
     category: 'Action',
     rating: 4.6,
-    link: '/'
+    link: '/view'
   },
   {
     id: 'm7',
@@ -64,7 +64,7 @@ const DUMMY_DATA = [
     year: '2020',
     category: 'Action',
     rating: 8.3,
-    link: '/'
+    link: '/view'
   },
   {
     id: 'm8',
@@ -73,7 +73,7 @@ const DUMMY_DATA = [
     year: '2019',
     category: 'Action',
     rating: 6.9,
-    link: '/'
+    link: '/view'
   },
   {
     id: 'm9',
@@ -82,7 +82,7 @@ const DUMMY_DATA = [
     year: '2020',
     category: 'Action',
     rating: 7.6,
-    link: '/'
+    link: '/view'
   },
   {
     id: 'm10',
@@ -91,7 +91,7 @@ const DUMMY_DATA = [
     year: '2020',
     category: 'Action',
     rating: 6.3,
-    link: '/'
+    link: '/view'
   },
 ]
 

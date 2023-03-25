@@ -14,7 +14,8 @@ body {
   max-width: 1200px;
   padding-right: 16px;
   padding-left: 16px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .movies-container {
@@ -35,3 +36,4 @@ body {
 @import 'headerDropdown';
 @import 'homeCarousel';
 @import 'titleText';
+@import 'viewBanner';
