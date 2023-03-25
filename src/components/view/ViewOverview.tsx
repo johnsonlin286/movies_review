@@ -25,7 +25,7 @@ const ViewOverview: React.FC<Props> = ({ data }) => {
     <div className="view-overview relative h-[120px] mb-[43px]">
       <div className="absolute w-full h-[80px] bg-black/50 -top-20"/>
       <div className="container relative flex -translate-y-[210px]">
-        <Image src={data.poster} alt={data.title} width="0" height="0" sizes="100vw" className="w-auto h-[330px] shadow-xl"/>
+        <Image src={data.poster} alt={data.title} width="0" height="0" sizes="100vw" className="view-overview__poster w-auto h-[330px]"/>
         <div className="view-overview__content w-full text-primary ml-[33px]">
           <div className="pt-[6px] mb-8">
             <p className="text-lg">{data.year}</p>
@@ -42,32 +42,32 @@ const ViewOverview: React.FC<Props> = ({ data }) => {
                   </div>
                   <div className="flex flex-col justify-center text-left text-xs uppercase">
                     <p className="text-secondary">User Score</p>
-                    <p>{data.vote} Votes</p>
+                    <p className="font-medium">{data.vote} Votes</p>
                   </div>
                 </div>
               </li>
               <li className="px-8 border-r border-white/20">
                 <div className="flex flex-col justify-center text-left text-xs uppercase">
                   <p className="text-secondary">Status</p>
-                  <p>{data.status}</p>
+                  <p className="font-medium">{data.status}</p>
                 </div>
               </li>
               <li className="px-8 border-r border-white/20">
                 <div className="flex flex-col justify-center text-left text-xs uppercase">
                   <p className="text-secondary">language</p>
-                  <p>{data.language}</p>
+                  <p className="font-medium">{data.language}</p>
                 </div>
               </li>
               <li className="px-8 border-r border-white/20">
                 <div className="flex flex-col justify-center text-left text-xs uppercase">
                   <p className="text-secondary">budget</p>
-                  <p>${Intl.NumberFormat().format(data.budget)}.00</p>
+                  <p className="font-medium">${Intl.NumberFormat().format(data.budget)}.00</p>
                 </div>
               </li>
               <li className="pl-8">
                 <div className="flex flex-col justify-center text-left text-xs uppercase">
                   <p className="text-secondary">production</p>
-                  <p>{data.production}</p>
+                  <p className="font-medium">{data.production}</p>
                 </div>
               </li>
             </ul>
