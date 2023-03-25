@@ -1,4 +1,4 @@
-import Slider from "react-slick";
+import Slider from "@ant-design/react-slick";
 
 import CarouselItem from "./CarouselItem";
 
@@ -44,7 +44,33 @@ const HomeCarousel = () => {
     infinite: true,
     centerPadding: "500px",
     slidesToShow: 1,
-    speed: 500
+    speed: 500,
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          centerPadding: "425px",
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          centerPadding: "340px",
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          centerPadding: "200px",
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          centerPadding: "50px",
+        }
+      }
+    ]
   };
   return (
     <div className="home-carousel pt-[55px] pb-[47px]">

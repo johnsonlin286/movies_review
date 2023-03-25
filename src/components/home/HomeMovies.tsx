@@ -103,7 +103,7 @@ const HomeMovies = () => {
           <TitleText text="Discover Movies" className="text-2xl"/>
           <HomeFilter/>
         </div>
-        <div className="flex flex-wrap justify-between gap-y-9">
+        <div className="flex flex-wrap gap-y-9 gap-x-[25px]">
           {
             DUMMY_DATA.map(data => (
               <MoviesCard key={data.id} poster={data.img} title={data.title} year={data.year} category={data.category} rating={data.rating} link={data.link}/>
