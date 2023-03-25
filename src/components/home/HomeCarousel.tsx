@@ -47,31 +47,31 @@ const HomeCarousel = () => {
     speed: 500,
     responsive: [
       {
-        breakpoint: 1440,
+        breakpoint: 1441,
         settings: {
-          centerPadding: "425px",
+          centerPadding: "420px",
         }
       },
       {
-        breakpoint: 1300,
+        breakpoint: 1281,
         settings: {
           centerPadding: "360px",
         }
       },
       {
-        breakpoint: 1200,
+        breakpoint: 1201,
         settings: {
           centerPadding: "340px",
         }
       },
       {
-        breakpoint: 1024,
+        breakpoint: 1025,
         settings: {
           centerPadding: "200px",
         }
       },
       {
-        breakpoint: 768,
+        breakpoint: 769,
         settings: {
           centerPadding: "50px",
         }
