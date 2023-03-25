@@ -69,7 +69,7 @@ const DUMMY_DATA = [
   {
     id: 'm8',
     img: '/images/posters/fast_and_furious.png',
-    title: 'Fast & Furious Present: Hobss & Shaw',
+    title: 'Fast & Furious Present...',
     year: '2019',
     category: 'Action',
     rating: 6.9,
@@ -103,7 +103,7 @@ const HomeMovies = () => {
           <TitleText text="Discover Movies" className="text-2xl"/>
           <HomeFilter/>
         </div>
-        <div className="flex flex-wrap gap-y-9 gap-x-[25px]">
+        <div className="flex flex-wrap gap-y-9 gap-x-9 xl:gap-x-[25px]">
           {
             DUMMY_DATA.map(data => (
               <MoviesCard key={data.id} poster={data.img} title={data.title} year={data.year} category={data.category} rating={data.rating} link={data.link}/>

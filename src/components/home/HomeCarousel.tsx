@@ -53,6 +53,12 @@ const HomeCarousel = () => {
         }
       },
       {
+        breakpoint: 1300,
+        settings: {
+          centerPadding: "360px",
+        }
+      },
+      {
         breakpoint: 1200,
         settings: {
           centerPadding: "340px",
